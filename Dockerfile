@@ -3,7 +3,7 @@ MAINTAINER Guido Schmutz (guido.schmutz@trivadis.com)
 
 #support for Hadoop 2.6.0+
 
-RUN curl -s http://www.apache.org/dyn/closer.cgi/spark/spark-1.3.1/spark-1.3.1-bin-hadoop2.6.tgz | tar -xz -C /usr/local/
+RUN curl -s http://mirror.switch.ch/mirror/apache/dist/spark/spark-1.3.1/spark-1.3.1-bin-hadoop2.6.tgz | tar -xz -C /usr/local/
 RUN cd /usr/local && ln -s spark-1.3.1-bin-hadoop2.6 spark
 ENV SPARK_HOME /usr/local/spark
 RUN mkdir $SPARK_HOME/yarn-remote-client
