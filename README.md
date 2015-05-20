@@ -6,26 +6,26 @@ The base Hadoop Docker image is also available as an official [Docker image](htt
 
 ##Pull the image from Docker Repository
 ```
-docker pull sequenceiq/spark:1.3.0
+docker pull gschmutz/spark:1.3.1
 ```
 
 ## Building the image
 ```
-docker build --rm -t sequenceiq/spark:1.3.0 .
+docker build --rm -t gschmutz/spark:1.3.1 .
 ```
 
 ## Running the image
 ```
-docker run -i -t -h sandbox sequenceiq/spark:1.3.0 bash
+docker run -i -t -h sandbox gschmutz/spark:1.3.1 bash
 ```
 or
 ```
-docker run -d -h sandbox sequenceiq/spark:1.3.0 -d
+docker run -d -h sandbox gschmutz/spark:1.3.1 -d
 ```
 
 ## Versions
 ```
-Hadoop 2.6.0 and Apache Spark v1.3.0
+Hadoop 2.6.0 and Apache Spark v1.3.1
 ```
 
 ## Testing
